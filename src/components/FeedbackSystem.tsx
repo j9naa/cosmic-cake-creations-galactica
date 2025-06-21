@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { User, Calendar, Message } from 'lucide-react';
+import { User, Calendar, MessageCircle } from 'lucide-react';
 
 interface Feedback {
   id: string;
@@ -259,7 +258,7 @@ const FeedbackSystem = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Message className="w-4 h-4 text-cosmic-purple mt-1 flex-shrink-0" />
+                    <MessageCircle className="w-4 h-4 text-cosmic-purple mt-1 flex-shrink-0" />
                     <p className="text-cosmic-silver leading-relaxed">{feedback.comment}</p>
                   </div>
                 </div>
